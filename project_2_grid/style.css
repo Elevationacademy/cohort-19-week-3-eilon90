@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    background-color: #eee;
+}
+
+p{
+    margin: 10px;
+    font-family: Calibri;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.freinds {
+    display: grid;
+    background-color: #9b59b6;
+    height: 40px;
+    border: 8px solid #8e44ad;
+    word-spacing: 0.5em;
+    border-radius: 8%;
+}
+
+.get-message {
+    display: grid;
+    height: 60px;
+    background-color: #aaa;
+    align-self: center;
+    justify-self: start;
+    margin: 20px;
+    border-radius: 8%;
+    align-content: center;
+}
+.send-message {
+    display: grid;
+    height: 60px;
+    background-color:#25D366;
+    align-self: center;
+    justify-self: end;
+    margin: 20px;
+    align-content: center;
+}
+
+.text {
+    font-family: 'Shadows Into Light', cursive, 'Freestyle Script';
+    width: auto;
+    font-size: 30px;
+    font-weight: 700;
+    
+}
+
+.time {
+    font-family: Freestyle Script;
+    display: inline-block;
+    width: auto;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+#container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 94% 6%;
+    grid-template-areas: 
+    "f m"
+    "f n";
+}
+
+#freinds {
+    grid-area: f;
+    display: grid;
+    grid-template-rows: repeat(4, 200px);
+    background-color: #8e44ad;
+}
+
+#top {
+    margin-top: 40px;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#main {
+    grid-area: m;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    align-content: end;
+}
+
+#message {
+    grid-area: n;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+#type {
+    display: grid;
+}
+
+#send {
+    display: grid;
+    background-color: #8e44ad;
+    font-size: 15px;
+    color: #fff;
+}
+
